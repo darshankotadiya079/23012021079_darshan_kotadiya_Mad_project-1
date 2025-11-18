@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Genres"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:flow_wrapMode="chain"
+            app:flow_horizontalStyle="packed"
+            app:flow_maxElementsWrap="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:constraint_referenced_ids="btn_horror,btn_drama,btn_fantasy,btn_romantic,btn_thriller,btn_comedy"
+            android:paddingBottom="16dp"/>
+
+        <Button android:id="@+id/btn_horror" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Horror 👻" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+        <Button android:id="@+id/btn_drama" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Drama 🎭" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+        <Button android:id="@+id/btn_fantasy" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Fantasy ✨" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+        <Button android:id="@+id/btn_romantic" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Romantic ❤️" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+        <Button android:id="@+id/btn_thriller" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Thriller 🔪" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+        <Button android:id="@+id/btn_comedy" style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Comedy 😂" android:textColor="@android:color/white" android:layout_margin="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
